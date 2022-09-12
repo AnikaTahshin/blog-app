@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4527a0;
+  font-family: Lato, sans-serif;
+  padding: 25px 5%;
+  color: #fff;
+}
+
+.nav-logo {
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #3e2391;
+}
+
+.sign-in-icon {
+  display: inline-block;
+  margin-right: 0.8em;
+}
