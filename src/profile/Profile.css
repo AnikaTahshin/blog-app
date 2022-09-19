@@ -1,0 +1,19 @@
+.profile-img{
+    border-radius: 50%;
+    width:200px
+}
+
+.edit-btn{
+    left: 456px;
+    position: absolute;
+    font-size: 23px;
+    color: #4448c5;
+}
+
+.img-btn{
+    left: 454px;
+    top: 216px;
+    position: absolute;
+    font-size: 23px;
+    color: #4448c5;
+}

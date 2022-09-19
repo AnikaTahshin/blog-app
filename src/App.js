@@ -8,6 +8,8 @@ import BlogDetails from "./blog/blogDetails/BlogDetails";
 import Addblog from "./blog/addBlog/Addblog";
 import UserBlog from "./blog/userBlog/UserBlog";
 import UpdateBlog from "./blog/update-blog/UpdateBlog";
+import Profile from "./profile/Profile";
+import AuthGurd from "./AuthGurd";
 
 function App() {
   return (
@@ -30,20 +32,38 @@ function App() {
             </Route>
 
             <Route exact path="/blog-details/:id">
-              <BlogDetails/>
+              <AuthGurd>
+                <BlogDetails />
+              </AuthGurd>
             </Route>
 
             <Route exact path="/add-blog/">
-              <Addblog/>
+              <AuthGurd>
+                <Addblog />
+              </AuthGurd>
             </Route>
 
             <Route exact path="/user-blogs">
-              <UserBlog/>
+              <AuthGurd>
+                <UserBlog />
+              </AuthGurd>
             </Route>
 
             <Route exact path="/update-blog/:id">
-              <UpdateBlog/>
+              <AuthGurd>
+                <UpdateBlog />
+              </AuthGurd>
             </Route>
+
+            <Route exact path="/profile">
+              <AuthGurd>
+                <Profile />
+              </AuthGurd>
+            </Route>
+
+
+
+
 
           </Switch>
 
